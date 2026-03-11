@@ -1,0 +1,26 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions
+
+on:
+  push:
+
+jobs:
+  dm-test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1
+        run: echo "Hello GitHub Actions"
+
+      - name: Step 2
+        run: echo "This is my first workflow"
+
+      - name: Step 3
+        run: echo "Learning CI/CD with GitHub Actions"
+
+      - name: Step 4
+        run: echo "Workflow triggered by ${{ github.actor }}"
+
+      - name: Step 5
+        run: echo "Job completed successfully"
+  
